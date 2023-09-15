@@ -1,0 +1,60 @@
+<odoo>
+    <data noupdate="1">
+
+        <record id='hr_50' model='hr.event'>
+            <field name='name'>HR 50%</field>
+            <field name='code'>17</field>
+        </record>
+
+        <record id='hr_60' model='hr.event'>
+            <field name='name'>HR 60%</field>
+            <field name='code'>194</field>
+        </record>
+
+        <record id='hr_75' model='hr.event'>
+            <field name='name'>HR 75%</field>
+            <field name='code'>149</field>
+        </record>
+
+        <record id='hr_80' model='hr.event'>
+            <field name='name'>HR 80%</field>
+            <field name='code'>150</field>
+        </record>
+
+        <record id='hr_100' model='hr.event'>
+            <field name='name'>HR 100%</field>
+            <field name='code'>82</field>
+        </record>
+
+        <record id='adicional_noturno' model='hr.event'>
+            <field name='name'>Adicional Noturno</field>
+            <field name='code'>106</field>
+        </record>
+
+        <record id='falta' model='hr.event'>
+            <field name='name'>Falta</field>
+            <field name='code'>39</field>
+        </record>
+
+        <record id='falta_dsr' model='hr.event'>
+            <field name='name'>Falta DSR</field>
+            <field name='code'>103</field>
+        </record>
+
+        <record id='faltas_horas_atraso' model='hr.event'>
+            <field name='name'>Faltas horas/atraso</field>
+            <field name='code'>104</field>
+        </record>
+
+        <record id='deslocamento_transferencia' model='hr.event'>
+            <field name='name'>Deslocamento/Transferência</field>
+            <field name='code'>1024</field>
+        </record>
+
+        <record id='pernoite' model='hr.event'>
+            <field name='name'>Pernoite</field>
+            <field name='code'>1010</field>
+        </record>
+
+    </data>
+</odoo>

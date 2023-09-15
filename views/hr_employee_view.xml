@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="employee_extension_form_view" model="ir.ui.view">
+        <field name="name">employee_extension_form_view</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='user_id']" position="before">
+                <field name="employee_pis" attrs="{'invisible': [('employee_pis', '=', False)]}"/>
+            </xpath>
+            <xpath expr="//field[@name='employee_pis']" position="before">
+                <field name="syndicate_id" string="Sindicato"/>
+            </xpath>
+            <xpath expr="//field[@name='job_id']" position="attributes">
+                <attribute name="attrs">{'invisible': [('department_id', '=', False)]}</attribute>
+            </xpath>
+            <xpath expr="//field[@name='pin']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='department_id']" position="attributes">
+                <attribute name="domain">['|', '&amp;', ('company_id', '=', False), ('company_id', '=', company_id),
+                    ('parent_id', '!=', False)]
+                </attribute>
+            </xpath>
+            <xpath expr="//field[@name='barcode']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//button[@name='generate_random_barcode']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//label[@for='barcode']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+        </field>
+    </record>
+</odoo>

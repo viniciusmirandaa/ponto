@@ -1,0 +1,47 @@
+<odoo>
+    <record id="punch_clock_lines_action" model="ir.actions.act_window">
+        <field name="name">Pontos</field>
+        <field name="res_model">punch.clock.lines</field>
+        <field name="view_mode">form</field>
+        <field name="target">current</field>
+    </record>
+
+    <record id="punch_clock_lines_form" model="ir.ui.view">
+        <field name="name">Pontos</field>
+        <field name="model">punch.clock.lines</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <!--Invisible fields-->
+                    <field name="punch_clock_id" string="Ponto" invisible="1"/>
+
+                    <group>
+                        <field name="time" string="Horário" required="True"/>
+                    </group>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="punch_clock_tree" model="ir.ui.view">
+        <field name="name">Relógio de ponto</field>
+        <field name="model">punch.clock.lines</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="formated_time" widget="badge"
+                       options="{'color_field': 'color', 'no_create_edit': True}"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="punch_clock_search" model="ir.ui.view">
+        <field name="name">Pontos</field>
+        <field name="model">punch.clock.lines</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="punch_clock_id"/>
+            </search>
+        </field>
+    </record>
+
+</odoo>

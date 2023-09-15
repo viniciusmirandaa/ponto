@@ -1,0 +1,12 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+punch_clock_integration_user,punch_clock_integration_user,model_punch_clock_integration,group_admin_punch_clock,1,1,1,1
+punch_time_user,punch_time_user,model_punch_time,group_admin_punch_clock,1,1,1,1
+manage_employee_time_user,manage_employee_time_user,model_manage_employee_time,group_admin_punch_clock,1,1,1,1
+punch_clock,punch_clock,model_punch_clock,group_admin_punch_clock,1,1,1,1
+hr_company,hr_company,model_hr_company,group_admin_punch_clock,1,1,1,1
+hr_event,hr_event,model_hr_event,group_admin_punch_clock,1,1,1,1
+hr_syndicate,hr_syndicate,model_hr_syndicate,group_admin_punch_clock,1,1,1,1
+hr_event_value,hr_event_value,model_hr_event_value,group_admin_punch_clock,1,1,1,1
+employee_pis_punch,employee_pis_punch,model_employee_pis_punch,group_admin_punch_clock,1,1,1,1
+pendent_pis_punch,pendent_pis_punch,model_pendent_pis_punch,group_admin_punch_clock,1,1,1,1
+punch_clock_lines,punch_clock_lines,model_punch_clock_lines,group_admin_punch_clock,1,1,1,1
